@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+p{
+    color:black;
+    
+}
+
+.project{
+    font-size: larger;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-weight: 600;
+    color: #003366;
+}
+
+header p {
+    font-size: 1em;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 20px;
+    border-bottom: 8px solid #e0e0e0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: #ffffff;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0611dfa;
+    font-size: 15px;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#about, #projects, #contact {
+    border-top: none;
+}
+
+section h2, #qualifications h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#about {
+    border-radius: 10px;
+}
+
+#about p {
+    font-size: 18.2px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#qualifications {
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #e0e0e0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f9;
+    font-weight: 600;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+#projects {
+    border-radius: 10px;
+}
+
+#projects .project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact p{
+    text-align: center;
+}
+
+#projects .project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #003366;
+}
+
+#projects .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#projects .project:hover {
+    transform: scale(1.02);
+}
+
+#contact {
+    border-radius: 10px;
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background: #5548d9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f9;
+    color: #333;
+    border-top: 2px solid #e0e0e0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6c63ff;
+}
