@@ -1,331 +1,107 @@
 <!DOCTYPE html>
-<html style="font-family: Arial, Helvetica, sans-serif;">
-
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    body {
-      background-color: black;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      overflow-x: hidden;
-    }
-
-    header {
-      margin-right: 150px;
-    }
-
-    .index {
-      width: 100%;
-      background-color: #444;
-      padding: 20px 10px;
-      display: flex;
-      justify-content: center;
-      border-radius: 50px;
-      margin-top: 10px;
-    }
-
-    .index li {
-      list-style: none;
-      display: inline-block;
-      margin: 0 20px;
-    }
-
-    .index a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 25px;
-      padding: 10px 20px;
-    }
-
-    .index a:hover {
-      color: white;
-      background-color: yellowgreen;
-      border-radius: 90px;
-      transition: 5ms;
-    }
-
-    .content {
-      display: flex;
-      align-items: center;
-      padding: 50px;
-      color: rgb(240, 254, 255);
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-
-    .pic {
-      width: 300px;
-      border-radius: 10%;
-      margin-right: 20px;
-      filter: drop-shadow(3px 2px 20px #f8c10c);
-    }
-
-    .bio {
-      text-align: left;
-    }
-
-    #txt h1 {
-      color: aliceblue;
-    }
-
-    span {
-      color: #f8c10c;
-      text-decoration: wavy;
-    }
-
-    .about-me {
-      background-color: #333;
-      padding: 50px;
-      margin-top: 50px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(248, 193, 12, 0.5);
-      color: white;
-      max-width: 800px;
-      width: 90%;
-      text-align: center;
-      box-sizing: border-box;
-    }
-
-    .about-me h2 {
-      color: yellow;
-      box-sizing: border-box;
-      border: 2px solid yellow;
-      padding: 10px;
-      border-radius: 10px;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 50px 10px;
-      color: goldenrod;
-      width: 90%;
-      max-width: 100%;
-      margin-top: 50px;
-      box-sizing: border-box;
-    }
-
-    .project-card {
-      background-color: #333;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s ease-in-out;
-      flex: 10 0 400px;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
-    }
-
-    .project-card:hover {
-      transform: translate(-50px, -50px);
-    }
-
-    .project-card h3 {
-      margin: 10px 0;
-      color: white;
-    }
-
-    .contact {
-      padding: 50px;
-      color: white;
-      text-align: center;
-      width: 100%;
-      max-width: 600px;
-      margin: auto;
-      box-sizing: border-box;
-    }
-
-    .contact-form {
-      max-width: 100%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      padding: 15px;
-      border-radius: 5px;
-      border: none;
-      font-size: 16px;
-    }
-
-    .contact-form button {
-      padding: 15px;
-      background-color: #f8c10c;
-      border: none;
-      border-radius: 5px;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .contact-form button:hover {
-      background-color: yellowgreen;
-    }
-
-    footer {
-      padding: 20px;
-      text-align: center;
-      color: white;
-      background-color: black;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    .qualifications {
-      background-color: #222;
-      padding: 30px;
-      margin-top: 50px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(248, 193, 12, 0.5);
-      color: white;
-      max-width: 800px;
-      width: 90%;
-      box-sizing: border-box;
-    }
-
-    .qualifications h2 {
-      color: yellow;
-      border: 2px solid yellow;
-      padding: 10px;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    table, th, td {
-      border: 1px solid #f8c10c;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #333;
-    }
-
-    tr:nth-child(even) {
-      background-color: #444;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <div class="index">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="">Projects</a></li>
-      </ul>
+
+    
+    <div class="navbar">
+       
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
+    
 
-  <div class="content">
-    <img class="pic" src="Screenshot 2024-03-08 075810.png" alt="Avatar">
-    <div class="bio">
-      <h1 id="txt">Hey! <br> I'm <span>Saketh</span></h1>
-    </div>
-  </div>
+    <header>
+        <div class="header-content">
+            <h1>I'm Saketh</h1>
+            <p>A technophile</p>
+        </div>
+    </header>
 
-  <div class="about-me">
-    <h2>About Me</h2>
-    <p style="font-family: 'Times New Roman', Times, serif; font-size:20px;">With a strong background in web development, I have been working on various <br>projects that involve creating
-      visually appealing and user-centric web interfaces.<br> My expertise lies in HTML, CSS, JavaScript, and React, and I
-      am constantly <br>exploring new technologies to stay updated with industry trends. I am a <br>problem solver at heart and
-      enjoy challenges that push me to grow and learn more.</p>
-  </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a passionate and dedicated full-stack web developer, I specialize in building dynamic and responsive web applications that deliver a seamless user experience. With a strong foundation in both front-end and back-end technologies, I bring ideas to life through clean, efficient code and innovative design. My expertise spans across HTML, CSS, JavaScript, React, Node.js, and various other modern frameworks and tools</p>
+    </section>
 
-  <div class="qualifications">
-    <h2>My Qualifications</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Qualification</th>
-          <th>Institution Name</th>
-          <th>Percentage</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>B.Tech(CSE)</td>
-          <td>Vgnan University</td>
-          <td>75</td>
-        </tr>
-        <tr>
-          <td>Intermediate</td>
-          <td>Bhashyam College</td>
-          <td>84</td>
-        </tr>
-        <tr>
-          <td>SSC</td>
-          <td>Bhashyam School</td>
-          <td>98</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <section id="qualifications">
+        <h2>My Qualifications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>Vignan's Foundation for Science, Technology & Research (Deemed to be University)</td>
+                    <td>2022-26 | CGPA: 74.1</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Bhashyam College</td>
+                    <td>2020-22 | CGPA: 84.5</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Bhashyam School</td>
+                    <td>2020-22 | CGPA: 98.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-  <div class="projects">
-    <div class="project-card">
-      <img src="Restaurant-Website-Design-RestroApp-1.png" alt="Project 1">
-      <h3>Restaurant Website</h3>
-    </div>
-    <div class="project-card">
-      <img src="original.jpg" alt="Project 2">
-      <h3>Blood Bank Website</h3>
-    </div>
-    <div class="project-card">
-      <img src="agri1.jpg" alt="Project 3">
-      <h3>Agriculture Management Website</h3>
-    </div>
-  </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1 <img src="Restaurant-Website-Design-RestroApp-1.png" alt=""></h3>
+            <p>The Management System for a Restaurant is a web-based application. The main aim is to provide better communication between customers and restaurants.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2 <img src="agri1.jpg" alt=""></h3>
+            <p>Agricultural Management System is an online web application where buyers can go through the list of products uploaded by the farmer and can add to their cart or buy the required product directly.</p>
+        </div>
 
-  <div class="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" action="https://example.com/send-message" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+        <div class="project">
+            <h3>Project 3 <img src="Screenshot 2024-08-14 213038.png" alt=""></h3>
+            <p>My personal portfolio website done with Tailwind CSS and HTML.</p>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 221FA04247 All rights reserved.</p>
-  </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me!</p>
+        <form action="mailto:bharatulasaketh@gmail.com" method="post" enctype="text/plain">
+            <h3>Contact Form</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Email: bharatulasaketh@gmail.com</p>
+    </footer>
 
 </body>
-
 </html>
